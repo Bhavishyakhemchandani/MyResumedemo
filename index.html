@@ -4,202 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNeakPEak</title>
+    <title>form validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <table>
-            <tr>
+    <div id="error"></div>
+    <div id="success"></div>
+  
 
-                <td>
-                    <h1><strong>SNeakPEak🔎</strong></h1>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/images/remove the word snea.png " alt="SNeakPEak's logo" width="500"></td>
-
-            </tr>
-        </table>
-        <p>
-        <h4>SneakPeak is where style meets smart living. As a premium shoe rental destination, we give fashion-forward
-            individuals access to a rotating wardrobe of iconic sneakers and high-end footwear—without the commitment of
-            owning.
-            Whether you're stepping out for a big event, looking to elevate your daily look, or just love switching up
-            your style, we make luxury and variety as easy as slipping on a new pair.
-            From limited-edition drops to everyday stunners, SneakPeak lets you walk in the shoes you dream
-            about—without breaking the bank.
-
-        </h4>
-        </p>
-        <p>
-        <h4>Experience a destination where premium style meets impeccable service—because you deserve more than just
-            shoes. You deserve an experience.</h4>
-        </p>
-    </header>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="#Styles">Styles</a></li>
-            <li><a href="#ProductInfo">Some Sneaky Stuff </a></li>
-            <li><a href="#RentalPlans">Our Plans</a></li>
-            <li><a href="#customer'sinfo">Your details</a></li>
-            <li><a href="#ContactSupport">Contact US</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <main>
-        <section id="Styles">
-
-            <h2><b>Different Styles</b></h2>
-            <table>
-                <tr>
-                    <Td><a href="/Resume/out.html"><img src="/images/generate a sports sh.png" alt="Sports shoes"
-                                width="350"></a></Td>
-                    <td><a href="/Resume/out.html"><img src="/images/casual sports shoes .png" alt="casual shoes"
-                                width="350"></a></td>
-
-                </tr>
-                <tr>
-                    <Td>
-                        <h3><a href="/Resume/out.html">Casual SNeakPEaks</a></h3>
-                    </Td>
-                    <Td>
-                        <h3><a href="/Resume/out.html">Sporty SneakPeaks</a></h3>
-                    </Td>
-
-                </tr>
-            </table>
-            <br><br>
-            <h3><B><I>Check out some styles</I></B></h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Zw53xsQ4aU?si=f5PRQ-eUL60DE7XS"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <hr>
-        <section id="ProductInfo">
-            <h2> <b>Some Sneaky Stuff</b></h2>
-            <ul>
-                <li>
-                    <h3><b>Vests</b></h3>
-                    <p>Most stylish and comfortable vests you will ever come accross</p>
-                </li>
-                <li>
-                    <h3><b>Shorts</b></h3>
-                    <p>Sporty and breathable</p>
-                </li>
-                <li>
-                    <h3><b>bandana</b></h3>
-                    <p>Giving Old Money look💰</p>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section id="RentalPlans">
-            <h2><b>Rental Plans</b></h2>
-            <table border="">
-                <tr>
-                    <th>Fit type</th>
-                    <th>1-Month charge</th>
-                    <th>3-Month charge</th>
-                </tr>
-                <tr>
-                    <td>Sporty Sneaks</td>
-                    <td>520 INR.</td>
-                    <td>1350 INR.</td>
-                </tr>
-                <tr>
-                    <td>Casual Sneaks</td>
-                    <td>540 INR.</td>
-                    <td>1370 INR.</td>
-                </tr>
-            </table>
-        </section>
-        <hr>
-        <section id="customer'sinfo">
-            <h2><b>Customer's Details</b> </h2>
-            <form action="infosave.html">
-                <article id="personal info">
-                    <label for="fname">Name:</label><input maxlength="30" minlength="5" type="text" name="" id="fname"
-                        required placeholder="eg:john doe">
-                    <br><br>
-                    <label for="no">Contact no.:</label><input type="number" id="no" required>
-                    <br><br>
-                    <label for="E-mail">E-mail:</label><input type="email" name="" id="E-mail">
-                    <br><br>
-                    <label for="gen">Gender:</label>
-                    <select name="State" id="">
-                        <option value="#"></option>
-                        <option value="male">Male</option>
-                        <option value="">Female</option>
-                        <option value="">Others</option>
-                    </select>
-                </article>
-                <br><br>
-                <article id="shoe info">
-                    <label for="">Size</label>
-                    <br>
-                    <input type="radio" name="sizes" id="sizes"><label for="sizes">6UK/7US</label>
-                    <input type="radio" name="sizes" id="sizes"><label for="sizes">7UK/8US</label>
-                    <input type="radio" name="sizes" id="sizes"><label for="sizes">8UK/9US</label>
-                    <input type="radio" name="sizes" id="sizes"><label for="sizes">9UK/10US</label>
-                    <br><br>
-                    <label for="quantity">Quantity:</label>
-                    <select name="qua" id="" required>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <br><br>
-                </article>
-                <article id="Address info">
-                    <label for="add">Address:</label>
-                    <label for="">House no.:</label><input type="text" id="add">
-                    <br><br>
-                    <label for="local">Locality:</label><input type="text" name="" id="local">
-                    <br><br>
-                    <label for="pin">Pin code:</label><input type="number" name="" id="pin">
-                    <br><br>
-                    <label for="State">state:</label><input type="text" name="" id="state">
-                    <br><br>
-                    <label for="country">Country:</label><input type="text" name="" id="country">
-
-                    <br><br>
-                </article>
-
-                <label for="feed">Feedback</label>
-                <textarea name="" id=""></textarea>
-                <br><br>
-                <input type="reset" name="reset" id="">
-                <input type="submit" name="" id="">
-            </form>
-
-        </section>
-        <hr>
-    </main>
-    <footer>
-        <ul>
-            <li><p><b><u>The additional items you will get with the  Sneaks</u></b></p></li>
-            <li>Extra pair of laces</li>
-            <li>A cool keychain</li>
-            <li>Cleaning kit</li>
-            <li>2 pairs of sole protectors</li>
-            <li>A air of socks</li>
-        </ul>
-        <hr>
-        <h2 id="ContactSupport">Our customer support:</h2>
-            <p><b>Mail ID: <a href="mailto:">sneakpeak@hotmail.com</a></b></p>
+    <div class="mail">
+        <div class="formelement">
+            <label for="first-name">Name</label>
+            <input type="text" id="name" name="first-name">
+            <div class="error-message" id="name-error"></div>
+        </div>
         
-    </footer>
+        <div class="formelement">
+             <label for="Email">Email</label>
+            <input type="text" id="email" name="email">
+            <div class="error-message" id="email-error"></div>
+        </div>
+         
+        <div class="formelement">
+            <label for="Phone-no">Phone-number</label>
+            <input type="text" id="Phone-no" name="Phone-no.">
+            <div class="error-message" id="phone-error"></div>
+        </div>
+        
+        <div class="formelement">
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="Password.">
+            <div class="error-message" id="password-error"></div>
+        </div>
+        
+        <div class="formelement">
+            <label for="confirm-password">Confirm-password</label>
+            <input type="password" id="confirm-password" name="confirm-password.">
+            <div class="error-message" id="confirm-password-error"></div>
+        </div>
+        
+        <input id="button" type="submit">  
 
+
+
+
+    </div>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
