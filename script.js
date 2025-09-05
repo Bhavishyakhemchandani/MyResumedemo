@@ -61,3 +61,18 @@ $("#button").click(function () {
         $("#success").html("You are registered successfully!");
     }
 });
+
+// Password toggle functionality
+$(".toggle-password").click(function() {
+    var targetId = $(this).data("target");
+    var passwordField = $("#" + targetId);
+    var button = $(this);
+    
+    if (passwordField.attr("type") === "password") {
+        passwordField.attr("type", "text");
+        button.text("🙈");
+    } else {
+        passwordField.attr("type", "password");
+        button.text("👁️");
+    }
+});

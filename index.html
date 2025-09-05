@@ -7,13 +7,13 @@
     <title>form validation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="error"></div>
     <div id="success"></div>
-  
+
 
     <div class="mail">
         <div class="formelement">
@@ -21,39 +21,45 @@
             <input type="text" id="name" name="first-name">
             <div class="error-message" id="name-error"></div>
         </div>
-        
+
         <div class="formelement">
-             <label for="Email">Email</label>
+            <label for="Email">Email</label>
             <input type="text" id="email" name="email">
             <div class="error-message" id="email-error"></div>
         </div>
-         
+
         <div class="formelement">
             <label for="Phone-no">Phone-number</label>
             <input type="text" id="Phone-no" name="Phone-no.">
             <div class="error-message" id="phone-error"></div>
         </div>
-        
+
         <div class="formelement">
             <label for="Password">Password</label>
-            <input type="password" id="Password" name="Password.">
+            <div class="password-container">
+                <input type="password" id="Password" name="Password.">
+                <button type="button" class="toggle-password" data-target="Password"></button>
+            </div>
             <div class="error-message" id="password-error"></div>
         </div>
-        
+
         <div class="formelement">
             <label for="confirm-password">Confirm-password</label>
-            <input type="password" id="confirm-password" name="confirm-password.">
+            <div class="password-container">
+                <input type="password" id="confirm-password" name="confirm-password.">
+                <button type="button" class="toggle-password" data-target="confirm-password"></button>
+            </div>
             <div class="error-message" id="confirm-password-error"></div>
         </div>
-        
-        <input id="button" type="submit">  
+
+        <input id="button" type="submit">
 
 
 
 
     </div>
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
